@@ -1,11 +1,9 @@
 <?php 
 
-require_once("includes/header.php"); ?>
 
-<?php
+require_once("includes/init.php");
+
 $session->logout();
 redirect("login.php");
 
 ?>
-
-

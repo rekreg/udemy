@@ -1,10 +1,16 @@
-<?php include("includes/header.php"); ?>
+<?php
 
-<?php if(!$session->is_signed_in()) {redirect("login.php"); } ?>
+require_once("includes/init.php");
 
-<?php 
+if(!$session->is_signed_in()) {
+redirect("login.php");
+}
 
 $photos = Photo::find_all();
+
+
+
+require_once("includes/header.php"); 
 
 
 ?>

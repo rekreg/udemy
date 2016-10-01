@@ -1,10 +1,10 @@
-<?php include("includes/header.php"); 
+<?php 
 
+require_once("includes/init.php");
 
 if(!$session->is_signed_in()) {
 redirect("login.php");
 }
-
 
 
 $message = "";
@@ -32,7 +32,7 @@ if($photo->save()) {
 
 ?>
 
-
+<?php require_once("includes/header.php"); ?>
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->

@@ -1,12 +1,15 @@
 <?php 
 
-require_once("includes/header.php");
+require_once("includes/init.php");
 
 if($session->is_signed_in()) {
-    
- redirect("index.php");   
-    
+ redirect("index.php");
 }
+
+
+
+
+
 
 if(isset($_POST['submit'])) {
     
@@ -44,6 +47,7 @@ else {
 
 
 ?>
+<?php require_once("includes/header.php"); ?>
 <div class="col-md-4 col-md-offset-3">
     
     <h4 class="bg-danger"><?=$the_message?></h4>

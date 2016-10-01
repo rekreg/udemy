@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 
 require_once("config.php");
 
@@ -21,7 +22,9 @@ if($this->connection->connect_errno){
     die("Database connection failed badly". mysqli_error());
     
 } 
-    
+
+
+$this->connection->set_charset("utf8");
     
 }       
 

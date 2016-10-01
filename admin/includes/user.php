@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 
 class User extends Db_object {
   
